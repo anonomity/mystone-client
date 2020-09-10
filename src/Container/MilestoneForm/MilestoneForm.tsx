@@ -24,8 +24,8 @@ class MilestoneForm extends Component {
                        <textarea />
                    </div>
                    <div className={classes.formControl}>
-                       <label>How long will it take to complete this Milestone?</label>
-                       <select>
+                       <label className={classes.formLabelSpace}>How long will it take to complete this Milestone?</label>
+                       <select className={classes.formSelect}>
                            <option>3 months</option>
                            <option>4 months</option>
                            <option>5 months</option>
