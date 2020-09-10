@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import classes from "./NavigationItems.module.css";
 import { NavLink } from "react-router-dom";
-const activeLinkStyle = {
+const activeLinkStyle: Object = {
     color: "white",
     backgroundColor: "#9c8383",
     display: "flex",
@@ -14,7 +14,7 @@ const activeLinkStyle = {
 
 }
 
-const normalLinkStyle = {
+const normalLinkStyle: Object = {
     margin: '2px 0',
     display: 'flex',
     width: '100%',
@@ -32,16 +32,22 @@ class NavigationItems extends Component {
             <div>
                 <ul className={classes.NavigationItems}>
                     <li className={classes.NavigationItem}>
-                        <NavLink 
-                            to="/newMilestone"
-                            >
-                            New Milestone
-                </NavLink>
+                        <NavLink
+                            exact to="/"
+                            activeStyle={activeLinkStyle}
+                            style={normalLinkStyle}>
+                            home
+                        </NavLink>
                     </li>
                     <li className={classes.NavigationItem}>
-                        <NavLink to="/">
-                            home
-                </NavLink>
+                        <NavLink
+                            to="/newMilestone"
+                            activeStyle={activeLinkStyle}
+                            style={normalLinkStyle}
+                        >
+                            New Milestone
+                        </NavLink>
+
                     </li>
 
                 </ul>
