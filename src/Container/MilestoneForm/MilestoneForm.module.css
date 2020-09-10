@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+.Background {
+    font-family: 'Krona One', sans-serif;
+    width: 70vw;
+    text-align: center;
+    
+    color: #5e5a52;
+    font-weight: lighter;
+}
+
+.formControl {
+    margin: 1rem 0;
+    display:flex;
+  }
+  
+.formControl label,
+  .formControl input,
+  .formControl textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .formControl input,
+  .formControl textarea {
+    border: none;
+    border-bottom: 2px solid #849698; 
+    font: inherit;
+    border-radius: 2px;
+  }
+
+  
+  
+  .formControl input:focus {
+    border-color: 	#e3d5bb;
+    outline: none;
+  }
+  .formControl textarea:focus {
+    outline-color: 	#e3d5bb;
+  }
+  
