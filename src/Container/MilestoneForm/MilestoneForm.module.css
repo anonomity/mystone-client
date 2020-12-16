@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 .Background {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'san Sarif';
     width: 70vw;
     text-align: center;
     
     color: #5e5a52;
     font-weight: lighter;
 }
+.formLabelSpace{
+  margin-right: 50px;
+  
+}
 
+.formSelect {
+  width: 60vw;
+  
+}
+
+.formSelectItem{
+  text-align: center;
+  color: red;
+}
 .formControl {
     margin: 1rem 0;
     display:flex;
