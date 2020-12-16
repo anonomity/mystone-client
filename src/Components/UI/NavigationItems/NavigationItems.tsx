@@ -2,30 +2,7 @@ import React, { Component } from "react";
 
 import classes from "./NavigationItems.module.css";
 import { NavLink } from "react-router-dom";
-const activeLinkStyle = {
-    color: "white",
-    backgroundColor: "#9c8383",
-    display: "flex",
-    width: "100%",
-    flexFlow: "column",
-    alignItems: "center",
-    padding: "16px 10px",
-    textTransform: "uppercase"
 
-}
-
-const normalLinkStyle = {
-    margin: '2px 0',
-    display: 'flex',
-    width: '100%',
-    alignItems: 'center',
-    textDecoration: "none",
-    flexFlow: 'column',
-    backgroundColor: ' #eeeaea',
-    padding: '16px 10px',
-    color: "#707070",
-    textTransform: "uppercase"
-}
 class NavigationItems extends Component {
     render() {
         return (

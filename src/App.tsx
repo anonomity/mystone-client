@@ -5,7 +5,7 @@ import MilestoneForm from "./Container/MilestoneForm/MilestoneForm";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter >
+      <BrowserRouter>
         <Layout>
           <Switch>
             <Route path="/newMilestone" component={MilestoneForm} />
