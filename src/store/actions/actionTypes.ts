@@ -1,6 +1,5 @@
-export const SEND_MILESTONE_START = 'SEND_MILESTONE_START';
-export const SEND_MILESTONE_FAIL = 'SEND_MILESTONE_ERROR';
-export const SEND_MILESTONE_SUCCESS = 'SEND_MILESTONE_SUCCESS';
+export const SEND_MILESTONE = 'SEND_MILESTONE';
+
 
 export interface Milestone {
     title: string,
@@ -9,14 +8,17 @@ export interface Milestone {
     duration: Date,
 }
 
-interface SendMilestoneStart {
-    type: typeof SEND_MILESTONE_START
-    payload: Milestone
-  }
+export interface MilestoneState {
+    milestone: [Object]
+} 
 
-interface SendMilestoneSuccess {
-    type: typeof SEND_MILESTONE_SUCCESS
-    payload: String
+interface SendMilestoneAction {
+    type: typeof SEND_MILESTONE
+    payload: Milestone
 }
 
-export type sendMilestoneTypes = SendMilestoneStart | SendMilestoneSuccess
+interface StartSuccess {
+    type: (dispatch : any) => void
+}
+
+export type MilestoneActionTypes = SendMilestoneAction | StartSuccess;

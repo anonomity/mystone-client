@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import reducers from './store/reducers/reducers';
+import { createStore, applyMiddleware } from 'redux'
+import reducers from './store/reducers/milestone';
+
+// const store = createStore(reducers, applyMiddleware(thunk as ThunkMiddleware));
 
 const store = createStore(reducers);
 
